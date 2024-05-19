@@ -105,10 +105,16 @@
     opacity: 0;
 }
 
+
+.resposta_back{
+    position: relative;
+}
+
 #rapidez_back, #intuitiva_back, #integracao_back{
     position: absolute;
-    bottom: 120px;
-    left: 150px;
+    bottom: -50px;
+    left:100px;
+    /* border: 2px solid red; */
 }
 
 
@@ -122,10 +128,15 @@
 }
 
 
+.resposta_front{
+    position: relative;
+}
+
 #biblioteca_front, #compreensao_front, #comunidade_front{
     position: absolute;
-    bottom: 120px;
-    left: 500px;
+    bottom: -50px;
+    left: 100px;
+    /* border: 2px solid red; */
 }
 
 
@@ -149,10 +160,15 @@
    opacity: 0;
 }
 
+.resposta_back_mobile{
+    position: relative !important;
+}
+
 #resposta1_back_mobile, #resposta2_back_mobile, #resposta3_back_mobile{
     position: absolute;
-    bottom: 120px;
-    right: 550px;
+    bottom: -50px;
+    right: 100px;
+    /* border: 2px solid red; */
 }
 
 
@@ -171,12 +187,17 @@
     opacity: 0;
 }
 
-#resposta1_front_mobile, #resposta2_front_mobile, #resposta3_front_mobile{
-    position: absolute;
-    bottom: 120px;
-    right: 150px;
+
+.resposta_front_mobile{
+    position: relative;
 }
 
+#resposta1_front_mobile, #resposta2_front_mobile, #resposta3_front_mobile{
+    position: absolute;
+    bottom: -50px;
+    right: 85px;
+    /* border: 2px solid red; */
+}
 
 
 
