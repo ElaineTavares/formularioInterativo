@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Interativo</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main class="formulario">
+        <div class="qual_profissao">
+            <h1>Qual é a sua profissão</h1>
+            <button id="resposta_web" onclick="profissaoWeb()">Web</button>
+            <button onclick="profissaoMobile()">Mobile</button>
+        </div>
+
+        <div class="profissao_web">
+            <div id="pergunta_area_web">
+                <h2>Qual área deseja atuar?</h2>
+                <div>
+                    <button id="resposta_back" class="btn_back" onclick="areaBack()">Back-end</button>
+                    <button id="resposta_front" class="btn_front" onclick="areaFront()">Front-end</button>
+                </div>
+            </div>
+
+            <div class="vantagem">     
+                <div id="pergunta_vantagem_back" class="vantagem_back">
+                    <h2>Qual vantagem você deseja aprender em Back-end</h2>
+                    <div style="display: flex; flex-flow: column; align-items: center;">
+                        <button class="btn_back" onclick="rapidezBack()">Rapidez</button>
+                        <button class="btn_back" onclick="intuitivaBack()">Programação intuitiva</button>
+                        <button class="btn_back" onclick="integracaoBack()">Fácil integração</button>
+                    </div>
+                </div>
+                <div id="pergunta_vantagem_front" class="vantagem_front">
+                    <h2>Qual vantagem você deseja aprender em Front-end</h2>
+                    <div style="display: flex; flex-flow: column; align-items: center;">
+                        <button class="btn_front" onclick="bibliotecaFront()">Vários bibliotecas</button>
+                        <button class="btn_front" onclick="compreensaoFront()">Fácil compreensão</button>
+                        <button class="btn_front" onclick="comunidadeFront()">Comunidade</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resposta_back">
+                <h3 id="respostah3_back">Ótima escolha! Essas são as 3 melhores linguagens para você:</h3>
+                <div class="rapidez_back" id="rapidez_back">
+                    <p>Python</p>
+                    <p>Ruby</p>
+                    <p>Java</p>
+                </div>
+                <div class="intuitiva_back" id="intuitiva_back">
+                    <p>PHP</p>
+                    <p>Django</p>
+                    <p>Laravel</p>
+                </div>
+                <div class="integracao_back" id="integracao_back">
+                    <p>Laravel</p>
+                    <p>PHP</p>
+                    <p>Django</p>
+                </div>
+            </div>
+
+            <div class="resposta_front">
+                <h3 id="respostah3_front">Ótima escolha! Essas são as 3 melhores linguagens para você:</h3>
+                <div class="biblioteca" id="biblioteca_front">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+                <div class="compreensao" id="compreensao_front">
+                    <p>React</p>
+                    <p>Bootstrap</p>
+                    <p>Angular</p>
+                </div>
+                <div class="comunidade" id="comunidade_front">
+                    <p>JavaScript</p>
+                    <p>React</p>
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="profissao_mobile">
+            <div id="pergunta_area_mobile">
+                <h2>Qual área deseja atuar?</h2>
+                <div>
+                    <button class="btn_back" onclick="backMobile()">Back-end</button>
+                    <button class="btn_front" onclick="frontMobile()">Front-end</button>
+                </div>
+            </div>
+
+            <div class="vantagem">     
+                <div class="vantagem_back" id="pergunta_vantagem_back_mobile">
+                    <h2>Qual vantagem você deseja aprender em Back-end</h2>
+                    <div style="display: flex; flex-flow: column; align-items: center;">
+                        <button class="btn_back" onclick="vantagem1BackMobile()">Rapidez</button>
+                        <button class="btn_back" onclick="vantagem2BackMobile()" >Programação intuitiva</button>
+                        <button class="btn_back" onclick="vantagem3BackMobile()">Fácil integração</button>
+                    </div>
+                </div>
+                <div class="vantagem_front" id="pergunta_vantagem_front_mobile">
+                    <h2>Qual vantagem você deseja aprender em Front-end</h2>
+                    <div style="display: flex; flex-flow: column; align-items: center;">
+                        <button class="btn_front" onclick="vantagem1FrontMobile()" >Vários bibliotecas</button>
+                        <button class="btn_front" onclick="vantagem2FrontMobile()">Fácil compreensão</button>
+                        <button class="btn_front" onclick="vantagem3FrontMobile()">Comunidade</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resposta_back mobile">
+                <h3 id="respostah3_back_mobile">Ótima escolha! Essas são as 3 melhores linguagens para você:</h3>
+                <div class="rapidez" id="resposta1_back_mobile">
+                    <p>Python</p>
+                    <p>Ruby</p>
+                    <p>Java</p>
+                </div>
+                <div class="intuitiva" id="resposta2_back_mobile">
+                    <p>PHP</p>
+                    <p>Django</p>
+                    <p>Laravel</p>
+                </div>
+                <div class="integracao" id="resposta3_back_mobile">
+                    <p>Ruby</p>
+                    <p>Python</p>
+                    <p>PHP</p>
+                </div>
+            </div>
+
+            <div class="resposta_front mobile">
+                <h3 id="respostah3_front_mobile">Ótima escolha! Essas são as 3 melhores linguagens para você:</h3>
+                <div class="rapidez" id="resposta1_front_mobile">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+                <div class="intuitiva" id="resposta2_front_mobile">
+                    <p>JavaScript</p>
+                    <p>React</p>
+                    <p>Bootstrap</p>
+                </div>
+                <div class="integracao" id="resposta3_front_mobile">
+                    <p>React</p>
+                    <p>Bootstrap</p>
+                    <p>Angular</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+    </main>
+</body>
+</html>
